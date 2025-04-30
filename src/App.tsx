@@ -1,14 +1,18 @@
-import User from "./Components/User"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NewsList from "./Components/News/NewsList";
+import AddNews from "./Components/News/AddNews";
+import EditNews from "./Components/News/EditNews";
 
 function App() {
-  
-
   return (
-   <div>
-      <h1 className="text-red-400">Hello</h1>
-      <User/>
-   </div>
-  )
+    <BrowserRouter> 
+      <Routes>
+        <Route path="/" element={<NewsList />} />
+        <Route path="/add" element={<AddNews />} />
+        <Route path="/edit/:id" element={<EditNews />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

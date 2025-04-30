@@ -1,4 +1,8 @@
-export interface IUser {
-    name: string;
-    
-}
+// types/NewsItem.ts
+export interface INews {
+    id?: string;
+    title: string;
+    description: string;
+    avatar: string;
+  }
+  
