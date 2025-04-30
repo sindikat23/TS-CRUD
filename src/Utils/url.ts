@@ -8,7 +8,7 @@ export const getNews = async (): Promise<INews[]> => {
   return res.data;
 };
 
-export const addNews = async (news: Omit<NewsItem, "id">): Promise<INews> => {
+export const addNews = async (news: Omit<INews, "id">): Promise<INews> => {
   const res = await axios.post(base_URL, news);
   return res.data;
 };
