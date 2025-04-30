@@ -30,7 +30,7 @@ function NewsList() {
     }, []);
 
     return (
-        <div className="bg-gray-800 py-2">
+        <div className="bg-gray-800 py-2 h-screen">
             <div className="container mx-auto">
                 <div className="flex justify-between my-2 border-[1px] border-gray-300 p-2 rounded-[20px_0px_20px_0px]">
                     <h1 className="text-3xl py-2 font-bold text-orange-400">News</h1>
